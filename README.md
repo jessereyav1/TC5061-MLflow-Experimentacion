@@ -1,15 +1,17 @@
 
 # TC5061 - Experimentación con MLflow
 
-## Descripción
+## Autor:
 
-Proyecto de experimentación de Machine Learning desarrollado para la materia de MLOps del Tecnológico de Monterrey.
+Jesse Rey Alvarado Valdez
+
+## Descripción:
 
 Se utiliza el conjunto de datos Bank Marketing de UCI para predecir si un cliente contratará un depósito bancario, utilizando regresión logística.
 
 El objetivo es comparar diferentes configuraciones de hiperparámetros y registrar los resultados de manera reproducible mediante MLflow Tracking.
 
-## Que usaremos?
+## Usaremos:
 
 - Python 3.14.4
 - Scikit-learn
@@ -17,13 +19,13 @@ El objetivo es comparar diferentes configuraciones de hiperparámetros y registr
 - Matplotlib
 - MLflow Tracking
 
-## Archivos principales
+## Archivos principales:
 
 - `train.py`: carga de datos, preprocesamiento, entrenamiento, evaluación y registro en MLflow.
 - `requirements.txt`: dependencias y versiones utilizadas.
 - `bank-full.csv`: conjunto de datos Bank Marketing.
 
-## Instalación
+## Instalación:
 
 Desde Ubuntu o WSL, ubicarse en la carpeta del proyecto y crear un entorno virtual:
 
@@ -33,7 +35,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Ejecución
+## Ejecución:
 
 Ejecutar el modelo con los hiperparámetros predeterminados:
 
@@ -53,7 +55,7 @@ Los argumentos disponibles son `--C`, `--solver`, `--max_iter` y `--random_state
 python3 train.py --help
 ```
 
-## MLflow Tracking
+## MLflow tracking:
 
 Cada ejecución registra los hiperparámetros, cinco métricas de evaluación, la matriz de confusión, la curva ROC, un archivo JSON de métricas y el pipeline entrenado.
 
@@ -65,7 +67,7 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db --host 127.0.0.1 --port 5000
 
 Abrir `http://127.0.0.1:5000` en el navegador y seleccionar el experimento `TC5061_Bank_Marketing_Experimentos`.
 
-## Reproducibilidad
+## Reproducibilidad:
 
 El conjunto de datos se divide en 80 % para entrenamiento y 20 % para prueba, utilizando estratificación.
 
@@ -73,13 +75,10 @@ Se utiliza la semilla `random_state=42` en la configuración predeterminada. El 
 
 Las versiones de las dependencias están fijadas en `requirements.txt`.
 
-## Limitaciones
+## Limitaciones al momento:
 
 El conjunto de datos presenta desbalance entre clases. Por ello, además de accuracy, se consideran precision, recall, F1-score y ROC-AUC.
 
 La variable `duration` contiene información conocida después de la llamada telefónica. En consecuencia, este modelo es un ejercicio de experimentación y no debe interpretarse como una herramienta lista para predecir resultados antes de contactar a los clientes.
 
-## Autor
-
-Jesse Rey Alvarado Valdez
 
