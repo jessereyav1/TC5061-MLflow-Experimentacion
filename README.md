@@ -9,7 +9,7 @@ Se utiliza el conjunto de datos Bank Marketing de UCI para predecir si un client
 
 El objetivo es comparar diferentes configuraciones de hiperparámetros y registrar los resultados de manera reproducible mediante MLflow Tracking.
 
-## Tecnologías
+## Que usaremos?
 
 - Python 3.14.4
 - Scikit-learn
