@@ -1,0 +1,19 @@
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Almacenamiento local de MLflow
+mlflow.db
+mlruns/
+mlartifacts/
+
+# Archivos temporales
+.ipynb_checkpoints/
+.DS_Store
+
+# Copias de respaldo
+*_backup.py
