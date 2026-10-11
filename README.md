@@ -1,7 +1,7 @@
 
 # TC5061 - Experimentación con MLflow
 
-## Autor:
+## Alumno:
 
 Jesse Rey Alvarado Valdez
 
