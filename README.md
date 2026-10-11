@@ -77,8 +77,10 @@ Las versiones de las dependencias están fijadas en `requirements.txt`.
 
 ## Limitaciones al momento:
 
-El conjunto de datos presenta desbalance entre clases. Por ello, además de accuracy, se consideran precision, recall, F1-score y ROC-AUC.
+El conjunto de datos presenta desbalance entre clases y por eso además de accuracy se consideran precision, recall, F1-score y ROC-AUC.
 
-La variable `duration` contiene información conocida después de la llamada telefónica. En consecuencia, este modelo es un ejercicio de experimentación y no debe interpretarse como una herramienta lista para predecir resultados antes de contactar a los clientes.
+La variable `duration` contiene información conocida después de la llamada telefónica. En resumen este modelo es un ejercicio de experimentación y no deberia interpretarse como una herramienta lista para predecir resultados antes de contactar a los clientes.
+
+-Jesse Rey A.
 
 
